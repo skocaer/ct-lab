@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+    color: #fff;
+    padding: 150px;
+}
+
+/*Maakt afbeeldingen grijsschaal via hoveren weer gekleurd en zoom effect*/
+
+img {
+     filter: gray;
+     -webkit-filter: grayscale(1);
+     -webkit-transition: all .8s ease-in-out; 
+}
+
+img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.002);
+}
+
+/*Margin tussen alle containers*/
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 15px
+}
+
+/*Tekst formatting*/
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    font-family: "Raleway";
+}
+
+/*Gecentreerd footer*/
+
+.footer {
+    text-align: center;
+}
