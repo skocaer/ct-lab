@@ -1,7 +1,6 @@
 body {
     background-color: #000;
     color: #fff;
-    padding: 150px;
 }
 
 /*Maakt afbeeldingen grijsschaal via hoveren weer gekleurd en zoom effect*/
@@ -20,9 +19,27 @@ img:hover {
 
 /*Margin tussen alle containers*/
 
+.inhoud {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
     margin-top: 20px;
     margin-bottom: 15px
+}
+
+.afb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Tekst formatting*/
@@ -30,6 +47,7 @@ img:hover {
 h1 {
     font-family: "Playfair Display";
     font-weight: 700;
+    text-align: center;
 }
 
 h2 {
@@ -42,8 +60,63 @@ p {
     font-family: "Raleway";
 }
 
+.adleft {
+    float: left;
+}
+
+.adright {
+    float: right;
+}
+  
+
 /*Gecentreerd footer*/
 
 .footer {
     text-align: center;
+}
+
+@media (max-width:1024px) {
+    img {
+        width: 250px;
+    }
+    .afb {
+        width: 200px;
+    }
+    .inhoud {
+        max-width: 400px;
+        margin: auto;
+        padding: 10px;
+      }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:375px) {
+    img {
+        width: 150px;
+    }
+    .afb {
+        width: 100px;
+    }
+    .inhoud {
+        max-width: 400px;
+        margin: auto;
+        padding: 10px;
+      }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 8px;
+    }
 }
